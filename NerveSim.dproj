@@ -5,8 +5,8 @@
         <FrameworkType>FMX</FrameworkType>
         <MainSource>NerveSim.dpr</MainSource>
         <Base>True</Base>
-        <Config Condition="'$(Config)'==''">Debug</Config>
-        <Platform Condition="'$(Platform)'==''">Win32</Platform>
+        <Config Condition="'$(Config)'==''">Release</Config>
+        <Platform Condition="'$(Platform)'==''">OSX64</Platform>
         <TargetedPlatforms>4099</TargetedPlatforms>
         <AppType>Application</AppType>
     </PropertyGroup>
@@ -144,11 +144,11 @@
     <PropertyGroup Condition="'$(Cfg_1_OSX64)'!=''">
         <Debugger_Launcher>/usr/X11/bin/xterm -e &quot;%debuggee%&quot;</Debugger_Launcher>
         <PF_MacDevelopmentCert>Developer ID Application: John Dempster (5C32G7C3QT)</PF_MacDevelopmentCert>
-        <Icns_MainIcns>ObSIm_Icns3.icns</Icns_MainIcns>
-        <VerInfo_MajorVer>4</VerInfo_MajorVer>
-        <VerInfo_MinorVer>1</VerInfo_MinorVer>
-        <VerInfo_Build>3</VerInfo_Build>
+        <Icns_MainIcns>NerveSim_Icon.icns</Icns_MainIcns>
+        <VerInfo_MajorVer>2</VerInfo_MajorVer>
+        <VerInfo_Keys>CFBundleName=$(MSBuildProjectName);CFBundleDisplayName=$(MSBuildProjectName);CFBundleIdentifier=$(MSBuildProjectName);CFBundleVersion=2.0.0;CFBundleShortVersionString=1.0.0;CFBundlePackageType=APPL;CFBundleSignature=????;CFBundleAllowMixedLocalizations=YES;CFBundleExecutable=$(MSBuildProjectName);NSHighResolutionCapable=true;LSApplicationCategoryType=public.app-category.utilities;NSLocationUsageDescription=The reason for accessing the location information of the user;NSContactsUsageDescription=The reason for accessing the contacts;NSCalendarsUsageDescription=The reason for accessing the calendar data;NSRemindersUsageDescription=The reason for accessing the reminders;NSCameraUsageDescription=The reason for accessing the camera;NSMicrophoneUsageDescription=The reason for accessing the microphone;NSMotionUsageDescription=The reason for accessing the accelerometer;NSDesktopFolderUsageDescription=The reason for accessing the Desktop folder;NSDocumentsFolderUsageDescription=The reason for accessing the Documents folder;NSDownloadsFolderUsageDescription=The reason for accessing the Downloads folder;NSNetworkVolumesUsageDescription=The reason for accessing files on a network volume;NSRemovableVolumesUsageDescription=The reason for accessing files on a removable volume;NSSpeechRecognitionUsageDescription=The reason for requesting to send user data to Apple&apos;s speech recognition servers;ITSAppUsesNonExemptEncryption=false</VerInfo_Keys>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <Icon_MainIcon>NerveSim_Icon.ico</Icon_MainIcon>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
         <VerInfo_MajorVer>2</VerInfo_MajorVer>
@@ -175,18 +175,19 @@
     <PropertyGroup Condition="'$(Cfg_2_OSX64)'!=''">
         <Debugger_Launcher>/usr/X11/bin/xterm -e &quot;%debuggee%&quot;</Debugger_Launcher>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
-        <Icon_MainIcon>OBSim_Icon.ico</Icon_MainIcon>
-        <VerInfo_MajorVer>4</VerInfo_MajorVer>
-        <Icns_MainIcns>ObSIm_Icns5.icns</Icns_MainIcns>
-        <VerInfo_MinorVer>1</VerInfo_MinorVer>
-        <VerInfo_Build>3</VerInfo_Build>
+        <Icon_MainIcon>NerveSim_Icon.ico</Icon_MainIcon>
+        <VerInfo_MajorVer>2</VerInfo_MajorVer>
+        <Icns_MainIcns>NerveSim_Icon.icns</Icns_MainIcns>
         <PF_MacDevelopmentCert>Developer ID Application: John Dempster (5C32G7C3QT)</PF_MacDevelopmentCert>
         <PF_AppleID>john.dempster0@gmail.com</PF_AppleID>
         <PF_DeveloperIDCert>Developer ID Application: John Dempster (5C32G7C3QT)</PF_DeveloperIDCert>
         <PF_StapleTicket>true</PF_StapleTicket>
         <PF_AppSpecificPassword>853F47CC5F920785CF3CE53EA45B7BB6E45E080C7EBFECA09F08777AD849A8AEA5EB5D0A7F631C61C1BD5765FAB3C363BAB3361C04652294162B458CE5F52284C946F35DD545FA95BFA2AF3F072C1D0A92003E071DBA097BE3FD16D14425789365CA9A8422F1</PF_AppSpecificPassword>
+        <VerInfo_Keys>CFBundleName=$(MSBuildProjectName);CFBundleDisplayName=$(MSBuildProjectName);CFBundleIdentifier=$(MSBuildProjectName);CFBundleVersion=2.1.4;CFBundleShortVersionString=1.0.0;CFBundlePackageType=APPL;CFBundleSignature=????;CFBundleAllowMixedLocalizations=YES;CFBundleExecutable=$(MSBuildProjectName);NSHighResolutionCapable=true;LSApplicationCategoryType=public.app-category.utilities;NSLocationUsageDescription=The reason for accessing the location information of the user;NSContactsUsageDescription=The reason for accessing the contacts;NSCalendarsUsageDescription=The reason for accessing the calendar data;NSRemindersUsageDescription=The reason for accessing the reminders;NSCameraUsageDescription=The reason for accessing the camera;NSMicrophoneUsageDescription=The reason for accessing the microphone;NSMotionUsageDescription=The reason for accessing the accelerometer;NSDesktopFolderUsageDescription=The reason for accessing the Desktop folder;NSDocumentsFolderUsageDescription=The reason for accessing the Documents folder;NSDownloadsFolderUsageDescription=The reason for accessing the Downloads folder;NSNetworkVolumesUsageDescription=The reason for accessing files on a network volume;NSRemovableVolumesUsageDescription=The reason for accessing files on a removable volume;NSSpeechRecognitionUsageDescription=The reason for requesting to send user data to Apple&apos;s speech recognition servers;ITSAppUsesNonExemptEncryption=false</VerInfo_Keys>
         <BT_BuildType>DeveloperID</BT_BuildType>
+        <VerInfo_MinorVer>1</VerInfo_MinorVer>
         <PF_TeamID>5C32G7C3QT</PF_TeamID>
+        <VerInfo_Build>4</VerInfo_Build>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
         <AppDPIAwarenessMode>PerMonitor</AppDPIAwarenessMode>
@@ -215,6 +216,9 @@
             <Form>Model</Form>
             <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="FMX.Platform.Mac.pas">
+            <Form>$ENDIF</Form>
         </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
@@ -267,7 +271,30 @@
                     </Platform>
                 </DeployFile>
                 <DeployFile LocalName="$(BDS)\bin\delphi_PROJECTICNS.icns" Configuration="Release" Class="ProjectOSXResource"/>
+                <DeployFile LocalName="NerveSim_Icon.icns" Configuration="Debug" Class="ProjectOSXResource">
+                    <Platform Name="OSX64">
+                        <RemoteName>NerveSim.icns</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="NerveSim_Icon.icns" Configuration="Release" Class="ProjectOSXResource">
+                    <Platform Name="OSX64">
+                        <RemoteName>NerveSim.icns</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="OBSIM_Icon.icns" Configuration="Debug" Class="ProjectOSXResource"/>
+                <DeployFile LocalName="OSX64\Debug\NerveSim.entitlements" Configuration="Debug" Class="ProjectOSXEntitlements">
+                    <Platform Name="OSX64">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="OSX64\Debug\NerveSim.info.plist" Configuration="Debug" Class="ProjectOSXInfoPList">
+                    <Platform Name="OSX64">
+                        <RemoteName>Info.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="OSX64\Debug\NerveSim" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="OSX64">
                         <RemoteName>NerveSim</RemoteName>
@@ -275,19 +302,19 @@
                     </Platform>
                 </DeployFile>
                 <DeployFile LocalName="OSX64\Debug\ObSIm.entitlements" Configuration="Debug" Class="ProjectOSXEntitlements"/>
-                <DeployFile LocalName="OSX64\Debug\ObSIm.entitlements" Configuration="Debug" Class="ProjectOSXEntitlements">
+                <DeployFile LocalName="OSX64\Debug\ObSIm.info.plist" Configuration="Debug" Class="ProjectOSXInfoPList"/>
+                <DeployFile LocalName="OSX64\Debug\ObSIm" Configuration="Debug" Class="ProjectOutput"/>
+                <DeployFile LocalName="OSX64\Release\NerveSim.entitlements" Configuration="Release" Class="ProjectOSXEntitlements">
                     <Platform Name="OSX64">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="OSX64\Debug\ObSIm.info.plist" Configuration="Debug" Class="ProjectOSXInfoPList"/>
-                <DeployFile LocalName="OSX64\Debug\ObSIm.info.plist" Configuration="Debug" Class="ProjectOSXInfoPList">
+                <DeployFile LocalName="OSX64\Release\NerveSim.info.plist" Configuration="Release" Class="ProjectOSXInfoPList">
                     <Platform Name="OSX64">
                         <RemoteName>Info.plist</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="OSX64\Debug\ObSIm" Configuration="Debug" Class="ProjectOutput"/>
                 <DeployFile LocalName="OSX64\Release\NerveSim" Configuration="Release" Class="ProjectOutput">
                     <Platform Name="OSX64">
                         <RemoteName>NerveSim</RemoteName>
@@ -295,18 +322,7 @@
                     </Platform>
                 </DeployFile>
                 <DeployFile LocalName="OSX64\Release\ObSIm.entitlements" Configuration="Release" Class="ProjectOSXEntitlements"/>
-                <DeployFile LocalName="OSX64\Release\ObSIm.entitlements" Configuration="Release" Class="ProjectOSXEntitlements">
-                    <Platform Name="OSX64">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="OSX64\Release\ObSIm.info.plist" Configuration="Release" Class="ProjectOSXInfoPList"/>
-                <DeployFile LocalName="OSX64\Release\ObSIm.info.plist" Configuration="Release" Class="ProjectOSXInfoPList">
-                    <Platform Name="OSX64">
-                        <RemoteName>Info.plist</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="OSX64\Release\ObSIm" Configuration="Release" Class="ProjectOutput"/>
                 <DeployFile LocalName="ObSIm_Icns3.icns" Configuration="Debug" Class="ProjectOSXResource">
                     <Platform Name="OSX64">

@@ -4,7 +4,7 @@ object MainFrm: TMainFrm
   Caption = 
     'NerveSim V2.0.0 : Nerve Simulation (c) J. Dempster, University o' +
     'f Strathclyde (2004-2024) '
-  ClientHeight = 778
+  ClientHeight = 720
   ClientWidth = 1180
   StyleBook = StyleBook1
   FormFactor.Width = 320
@@ -16,27 +16,28 @@ object MainFrm: TMainFrm
   DesignerMasterStyle = 0
   object DisplayGrp: TGroupBox
     Anchors = [akLeft, akTop, akRight, akBottom]
-    Position.X = 281.000000000000000000
-    Position.Y = 57.000000000000000000
+    Position.X = 297.000000000000000000
+    Position.Y = 46.000000000000000000
     Size.Width = 867.000000000000000000
-    Size.Height = 716.000000000000000000
+    Size.Height = 658.000000000000000000
     Size.PlatformDefault = False
+    Text = 'Chart '
     TabOrder = 0
     object DisplayPage: TTabControl
       Anchors = [akLeft, akTop, akRight, akBottom]
       Position.X = 16.000000000000000000
-      Position.Y = 16.000000000000000000
+      Position.Y = 24.000000000000000000
       Size.Width = 841.000000000000000000
-      Size.Height = 692.000000000000000000
+      Size.Height = 617.000000000000000000
       Size.PlatformDefault = False
       TabIndex = 0
       TabOrder = 1
       TabPosition = PlatformDefault
       Sizes = (
         841s
-        665s
+        590s
         841s
-        665s)
+        590s)
       object ChartTab: TTabItem
         CustomIcon = <
           item
@@ -55,7 +56,7 @@ object MainFrm: TMainFrm
           Anchors = [akLeft, akTop, akRight, akBottom]
           Position.Y = 37.000000000000000000
           Size.Width = 825.000000000000000000
-          Size.Height = 564.000000000000000000
+          Size.Height = 489.000000000000000000
           Size.PlatformDefault = False
           OnMouseUp = scDisplayMouseUp
           CursorChangeInProgress = False
@@ -98,7 +99,7 @@ object MainFrm: TMainFrm
         object TDisplayPanel: TPanel
           Anchors = [akLeft, akRight]
           Position.X = 8.000000000000000000
-          Position.Y = 609.425048828125000000
+          Position.Y = 538.211730957031300000
           Size.Width = 825.000000000000000000
           Size.Height = 44.000000000000000000
           Size.PlatformDefault = False
@@ -1755,24 +1756,26 @@ object MainFrm: TMainFrm
   end
   object ControlsGrp: TGroupBox
     Anchors = [akLeft, akTop, akBottom]
-    Position.Y = 39.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 46.000000000000000000
     Size.Width = 289.000000000000000000
-    Size.Height = 716.000000000000000000
+    Size.Height = 642.000000000000000000
     Size.PlatformDefault = False
+    Text = ' Controls '
     TabOrder = 1
     object ExperimentGrp: TGroupBox
       Anchors = [akLeft, akTop, akRight]
-      Position.X = 8.000000000000000000
-      Position.Y = 8.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 18.000000000000000000
       Size.Width = 265.000000000000000000
-      Size.Height = 65.000000000000000000
+      Size.Height = 57.000000000000000000
       Size.PlatformDefault = False
       Text = ' Experiment '
       TabOrder = 1
       object bNewExperiment: TButton
         Anchors = [akLeft, akTop, akRight]
         Position.X = 8.000000000000000000
-        Position.Y = 33.000000000000000000
+        Position.Y = 23.000000000000000000
         RepeatClick = True
         Size.Width = 249.000000000000000000
         Size.Height = 24.000000000000000000
@@ -2026,8 +2029,8 @@ object MainFrm: TMainFrm
     end
     object SaltSolutionPage: TTabControl
       Anchors = [akLeft, akTop, akRight]
-      Position.X = 24.000000000000000000
-      Position.Y = 460.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 458.000000000000000000
       Size.Width = 265.000000000000000000
       Size.Height = 200.000000000000000000
       Size.PlatformDefault = False

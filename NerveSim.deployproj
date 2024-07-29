@@ -1,0 +1,124 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Condition="Exists('$(BDS)\bin\CodeGear.Deployment.targets')" Project="$(BDS)\bin\CodeGear.Deployment.targets"/>
+    <ProjectExtensions>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <PropertyGroup/>
+    <ItemGroup Condition="'$(Platform)'=='Win64'"/>
+    <ItemGroup Condition="'$(Platform)'=='OSX64'">
+        <DeployFile Include="OSX64\Debug\NerveSim" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NerveSim.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>NerveSim</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="ObSIm_Icns3.icns" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NerveSim.app\Contents\Resources\</RemoteDir>
+            <RemoteName>ObSIm.icns</RemoteName>
+            <DeployClass>ProjectOSXResource</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="OSX64\Debug\NerveSim.entitlements" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NerveSim.app\..\</RemoteDir>
+            <RemoteName>NerveSim.entitlements</RemoteName>
+            <DeployClass>ProjectOSXEntitlements</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="OSX64\Debug\NerveSim.info.plist" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NerveSim.app\Contents\</RemoteDir>
+            <RemoteName>Info.plist</RemoteName>
+            <DeployClass>ProjectOSXInfoPList</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="OSX64\Release\NerveSim" Condition="'$(Config)'=='Release'">
+            <RemoteDir>NerveSim.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>NerveSim</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="NerveSim_Icon.icns" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NerveSim.app\Contents\Resources\</RemoteDir>
+            <RemoteName>NerveSim.icns</RemoteName>
+            <DeployClass>ProjectOSXResource</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="NerveSim_Icon.icns" Condition="'$(Config)'=='Release'">
+            <RemoteDir>NerveSim.app\Contents\Resources\</RemoteDir>
+            <RemoteName>NerveSim.icns</RemoteName>
+            <DeployClass>ProjectOSXResource</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="OSX64\Release\NerveSim.entitlements" Condition="'$(Config)'=='Release'">
+            <RemoteDir>NerveSim.app\..\</RemoteDir>
+            <RemoteName>NerveSim.entitlements</RemoteName>
+            <DeployClass>ProjectOSXEntitlements</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ObSIm_Icns5.icns" Condition="'$(Config)'=='Release'">
+            <RemoteDir>NerveSim.app\Contents\Resources\</RemoteDir>
+            <RemoteName>ObSIm.icns</RemoteName>
+            <DeployClass>ProjectOSXResource</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\delphi_PROJECTICNS.icns" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NerveSim.app\Contents\Resources\</RemoteDir>
+            <RemoteName>ObSIm.icns</RemoteName>
+            <DeployClass>ProjectOSXResource</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="OSX64\Release\NerveSim.info.plist" Condition="'$(Config)'=='Release'">
+            <RemoteDir>NerveSim.app\Contents\</RemoteDir>
+            <RemoteName>Info.plist</RemoteName>
+            <DeployClass>ProjectOSXInfoPList</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='Win32'">
+        <DeployFile Include="Win32\Release\NerveSim.exe" Condition="'$(Config)'=='Release'">
+            <RemoteDir>NerveSim\</RemoteDir>
+            <RemoteName>NerveSim.exe</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='OSXARM64'"/>
+</Project>

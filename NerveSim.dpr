@@ -6,7 +6,8 @@ uses
   FMX.Types,
   NerveSimMain in 'NerveSimMain.pas' {MainFrm},
   ModalBox in 'ModalBox.pas' {ModalBoxFrm},
-  NerveModel in 'NerveModel.pas' {Model: TDataModule};
+  NerveModel in 'NerveModel.pas' {Model: TDataModule}
+  {$IFDEF MACOS} ,FMX.Platform.Mac in 'FMX.Platform.Mac.pas' {$ENDIF};
 
 {$R *.res}
 

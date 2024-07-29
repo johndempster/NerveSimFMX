@@ -277,7 +277,6 @@ procedure TMainFrm.FormShow(Sender: TObject);
 // ------------------------------------------------
 var
     FileName : String ;
-   TempName,TempPath : Array[0..255] of Char ;
    HelpFileName,LocalHelpFilePath : string ;
 begin
 
@@ -370,8 +369,6 @@ procedure TMainFrm.NewExperiment ;
 // ------------------------------------
 var
     i : Integer ;
-    ZeroCaSolnAvailable : Boolean ;
-    x : Single ;
 begin
 
      // Initialise Nerve simulation model
@@ -811,9 +808,6 @@ procedure TMainFrm.bStimulationOffClick(Sender: TObject);
 // --------------------
 // Stop nerve stimulus
 // --------------------
-var
-  ChartAnnotation : String ;
-
 begin
 
      bStimulationOn.Enabled := True ;

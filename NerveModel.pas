@@ -107,9 +107,6 @@ procedure TModel.Initialize ;
 // ------------------------------------
 // Start new experiment with new tissue
 // ------------------------------------
-var
-    i : Integer ;
-    x : Single ;
 begin
 
      // Create list of drugs
@@ -209,7 +206,7 @@ type
           end ;
 var
    Alpha,Beta : TRate ;
-   dm,dn,dh,dv,mInf,hInf : single ;
+   dm,dn,dh,dv : single ;
    nSteps : Integer ;
    Block : Single ;
    i : Integer ;
