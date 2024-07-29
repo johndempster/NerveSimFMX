@@ -7,7 +7,7 @@ unit NerveSimMain;
 // 12/08/08 V1.1 Lignocaine name changed to Lidocaine
 // 08/10/14 V1.2.1 Help file copied to local temp folder to allow opening when run from network folder
 // 25.07.24 V1.2.2 Simulation code transferred to Model Data Unit
-// 26.07.24 V1.2.3 FMX Multi-platform version
+// 26.07.24 V2.0.0 FMX Multi-platform version
 
 interface
 
@@ -1136,7 +1136,7 @@ procedure TMainFrm.mnWebHelpClick(Sender: TObject);
 var
   URL: string;
 begin
-  URL := 'https://github.com/johndempster/ObSimFMX/wiki';
+  URL := 'https://github.com/johndempster/NerveSimFMX/wiki';
 {$IFDEF MSWINDOWS}
   URL := StringReplace(URL, '"', '%22', [rfReplaceAll]);
   ShellExecute(0, 'open', PChar(URL), nil, nil, SW_SHOWNORMAL);
