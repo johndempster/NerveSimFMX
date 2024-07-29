@@ -291,6 +291,8 @@ $
 
 
 
+
+
 $
 $
 1
@@ -301,20 +303,20 @@ Strathclyde Institute for Pharmacy & Biomedical Sciences
 NerveSim
 {90A60BAC-E28D-4F0D-9064-F8139342B5B6}
 {30FC793E-09F9-439F-98E1-CF3E7AC0A8A2}
-1.2.0
+2.0.0
 English
 NerveSim
 NerveSim Installation
 Strathclyde Institute for Pharmacy & Biomedical Sciences
 All rights reserved
-{82AD9CE5-AFD7-4447-96D2-63AC833BE5E8}
+{91647733-61B4-420A-B53A-363ECA627A88}
 Strathclyde Institute for Pharmacy & Biomedical Sciences
 Strathclyde Institute for Pharmacy & Biomedical Sciences
 http://spider.science.strath.ac.uk/sipbs/showPage.php?page=software_sims
 http://spider.science.strath.ac.uk/sipbs/showPage.php?page=software_sims
 All rights reserved
 FALSE
-
+NerveSim_Win_Setup_V2.0.0
 TRUE
 FALSE
 

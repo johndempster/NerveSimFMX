@@ -250,7 +250,6 @@ if Variable SILENT Equals FALSE
   if Variable RUNAPP Equals TRUE
     if Variable REMOVE Equals FALSE
       if Variable SUCCESS Equals COMPLETE
-        Run Program $TARGETDIR$\NerveSim.exe 
         Comment: TO-DO: Insert command that starts your application here
       end
     end
